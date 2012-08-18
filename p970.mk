@@ -169,9 +169,6 @@ PRODUCT_PACKAGES += \
 # HWComposer
 PRODUCT_PACKAGES += hwcomposer.default
 
-#Camera
-PRODUCT_PACKAGES += camera.p970
-
 # OpenMAX IL configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/policytable.tbl:system/etc/policytable.tbl \

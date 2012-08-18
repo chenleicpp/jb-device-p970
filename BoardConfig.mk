@@ -44,8 +44,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
-BOARD_USES_AUDIO_LEGACY := true
-TARGET_PROVIDES_LIBAUDIO := false
+BOARD_USES_AUDIO_LEGACY := false
 
 # Camera
 BOARD_CAMERA_LIBRARIES := libcamera
