@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
 	hcidump \
 	libaudioutils \
 	audio.a2dp.default \
-	libaudiohw_legacy
+	libaudiohw_legacy \
+	audio.primary.p970
 
 # OMX components
 PRODUCT_PACKAGES += \
