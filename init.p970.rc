@@ -613,7 +613,6 @@ service servicemanager /system/bin/servicemanager
     critical
     onrestart restart zygote
     onrestart restart media
-    onrestart restart surfaceflinger
     onrestart restart drm
 	
 service vold /system/bin/vold
@@ -637,11 +636,6 @@ service ril-daemon /system/bin/rild
     user root
     group radio cache inet misc audio sdcard_rw qcom_oncrpc diag
 
-service surfaceflinger /system/bin/surfaceflinger
-    class main
-    user system
-    group graphics
-    onrestart restart zygote
 service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
     class main
     socket zygote stream 660 root system
@@ -650,10 +644,6 @@ service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-sys
     onrestart restart media
     onrestart restart netd
 
-service drm /system/bin/drmserver
-    class main
-    user drm
-    group drm system inet drmrpc sdcard_r
 service media /system/bin/mediaserver
     class main
     user media
