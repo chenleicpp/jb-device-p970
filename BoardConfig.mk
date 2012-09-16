@@ -43,7 +43,8 @@ BOARD_MTP_DEVICE := "/dev/mtp"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
 # Audio
-BOARD_USES_AUDIO_LEGACY := true
+BOARD_USES_GENERIC_AUDIO := false
+BOARD_USES_AUDIO_LEGACY := false
 
 # Camera
 BOARD_CAMERA_LIBRARIES := libcamera

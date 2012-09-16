@@ -152,9 +152,14 @@ PRODUCT_PACKAGES += \
 	hciattach \
 	hcidump \
 	libaudioutils \
+	audio_policy.p970 \
 	audio.a2dp.default \
 	libaudiohw_legacy \
-	audio.primary.p970
+	audio.primary.omap3 \
+	audio.usb.default
+	
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # OMX components
 PRODUCT_PACKAGES += \
