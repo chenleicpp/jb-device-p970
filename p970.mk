@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 	libaudioutils \
 	audio.a2dp.default \
 	libaudiohw_legacy \
-	audio.primary.p970
+	audio.usb.default
 
 # OMX components
 PRODUCT_PACKAGES += \
