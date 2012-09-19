@@ -155,7 +155,11 @@ PRODUCT_PACKAGES += \
 	audio.a2dp.default \
 	libaudiohw_legacy \
 	audio.usb.default
-
+	
+# Camera
+PRODUCT_PACKAGES += \
+	camera.p970
+	
 # OMX components
 PRODUCT_PACKAGES += \
     libstagefrighthw \
